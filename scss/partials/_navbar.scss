@@ -1,0 +1,89 @@
+.navbar {
+  background-color: $fondoClaro;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: ease all 0.5s;
+
+  body.dark & {
+    background-color: $fondoOscuro;
+    box-shadow: 10px 5px 5px #fff;
+    .navbarCart {
+      color: $fondoClaro;
+    }
+    .ulHome li a {
+      color: $fondoClaro;
+      font-weight: bold;
+    }
+  }
+  .ulHome {
+    display: flex;
+    margin: auto;
+  }
+  .ulHome li {
+    padding: 0 15px 0 15px;
+    list-style: none;
+  }
+  .ulHome li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .divHeader {
+    display: flex;
+  }
+  .divCart {
+    display: flex;
+  }
+  .navbarCart {
+    font-size: 130%;
+    padding: 5px;
+    margin: 0 0 0 15px;
+    color: rgba(0, 0, 0, 0.801);
+  }
+  .switch {
+    border-radius: 1000px;
+    background-color: rgba(0, 0, 0, 0.801);
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+    margin-left: 20px;
+    height: 30px;
+    &::after {
+      content: " ";
+      display: block;
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      background: #f1f1f1;
+      top: 0;
+      left: 0;
+      right: unset;
+      border-radius: 100px;
+      transition: ease all 0.3s;
+      box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+    }
+    &.active {
+      background-color: orange;
+      color: #000;
+      &::after {
+        right: 0;
+        left: unset;
+      }
+    }
+    .moonIcon {
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      display: block;
+      background: none;
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 1500px;
+  background-color: #fff;
+  -webkit-transition: ease all 0.5s;
+  transition: ease all 0.5s;
+}
+
+body.dark {
+  background-color: #000;
+}
+
+header {
+  background-color: #fff;
+  -webkit-transition: ease all 0.5s;
+  transition: ease all 0.5s;
+}
+
+header.dark {
+  background-color: #000;
+}
+
+.navbar {
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: ease all 0.5s;
+  transition: ease all 0.5s;
+}
+
+body.dark .navbar {
+  background-color: #000;
+  -webkit-box-shadow: 10px 5px 5px #fff;
+          box-shadow: 10px 5px 5px #fff;
+}
+
+body.dark .navbar .navbarCart {
+  color: #fff;
+}
+
+body.dark .navbar .ulHome li a {
+  color: #fff;
+  font-weight: bold;
+}
+
+.navbar .ulHome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+
+.navbar .ulHome li {
+  padding: 0 15px 0 15px;
+  list-style: none;
+}
+
+.navbar .ulHome li a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar .divHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar .divCart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar .navbarCart {
+  font-size: 130%;
+  padding: 5px;
+  margin: 0 0 0 15px;
+  color: rgba(0, 0, 0, 0.801);
+}
+
+.navbar .switch {
+  border-radius: 1000px;
+  background-color: rgba(0, 0, 0, 0.801);
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  outline: none;
+  margin-left: 20px;
+  height: 30px;
+}
+
+.navbar .switch::after {
+  content: " ";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: #f1f1f1;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 100px;
+  -webkit-transition: ease all 0.3s;
+  transition: ease all 0.3s;
+  -webkit-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .switch.active {
+  background-color: orange;
+  color: #000;
+}
+
+.navbar .switch.active::after {
+  right: 0;
+  left: unset;
+}
+
+.navbar .switch .moonIcon {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  background: none;
+  color: #fff;
+}
+/*# sourceMappingURL=general.css.map */
